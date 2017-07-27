@@ -2,15 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>DocX builder demo</title>
+  <title>DocX builder Client side demo</title>
+  <style>
+    #fileInputLi {
+      text-decoration: underline;
+      color: green;
+      font-weight: bold;
+    }
+    #build {
+      color: green;
+      font-size: 1.5em;
+      line-height: 3em;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
-<h1>DocX builder demo</h1>
+<h1>DocX builder Client side demo</h1>
 
 <h2>Description</h2>
-<p>This page uses a DocX <a href="template.docx">template file</a> as a starter, sets some data, and enables the Client to insert the body of other local DocX files.</p>
-<p>All this process happens on Client (browser) side (except for the starter template file).</p>
+<p>This page uses a static DocX <a href="template.docx">template file</a> as a starter, sets some data, and enables the Client to insert the body of other local DocX files.</p>
+<p>All this process happens on Client (browser) side. Even the template file could have been provided locally by the user.</p>
 
 <h2>Demo</h2>
 <form id="form">
@@ -22,9 +35,9 @@
   <button id="build">Build DocX file</button>
 </form>
 
-<p>Of course you can skip the last &quot;Save As&quot; prompt and send the resulting File (blob) to your Server instead.</p>
+<p>Of course the app could have been setup to remove the last &quot;Save As&quot; prompt and send the resulting File (blob) to a Server instead.</p>
 
-<h2>References</h2>
+<h2>Libraries</h2>
 <ul>
   <li><a href="https://github.com/open-xml-templating/docxtemplater">docxtemplater</a> (dual licensed MIT or GPLv3)</li>
   <li><a href="https://github.com/jindw/xmldom">xmldom</a> (dual licensed MIT or LGPL)</li>
