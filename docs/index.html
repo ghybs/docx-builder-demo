@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DocX builder demo</title>
+</head>
+<body>
+
+<h1>DocX builder demo</h1>
+
+<h2>Description</h2>
+<p>This page uses a DocX <a href="template.docx">template file</a> as a starter, sets some data, and enables the Client to insert the body of other local DocX files.</p>
+<p>All this process happens on Client (browser) side (except for the starter template file).</p>
+
+<h2>Demo</h2>
+<form id="form">
+  <ul id="listOfInsertedDocs">
+    <li id="fileInputLi">Insert the content of an existing DocX file on local File System: <input type="file" id="inputFile" /></li>
+  </ul>
+
+  <p>Once done, click on below button to generate the DocX file and prompt a &quot;Save As…&quot; dialog.</p>
+  <button id="build">Build DocX file</button>
+</form>
+
+<p>Of course you can skip the last &quot;Save As&quot; prompt and send the resulting File (blob) to your Server instead.</p>
+
+<h2>References</h2>
+<ul>
+  <li><a href="https://github.com/open-xml-templating/docxtemplater">docxtemplater</a> (dual licensed MIT or GPLv3)</li>
+  <li><a href="https://github.com/jindw/xmldom">xmldom</a> (dual licensed MIT or LGPL)</li>
+  <li><a href="https://github.com/Stuk/jszip">JSZip</a> (dual licensed MIT or GPLv3)</li>
+  <li><a href="https://github.com/Stuk/jszip-utils">JSZipUtils</a> (dual licensed MIT or GPLv3)</li>
+  <li><a href="https://github.com/eligrey/FileSaver.js/">FileSaver.js</a> (MIT license) (optional)</li>
+</ul>
+
+<h2>Source</h2>
+<a href="https://github.com/ghybs/docx-builder-demo">Repository</a>
+
+<script src="js/index.js"></script>
+
+</body>
+</html>

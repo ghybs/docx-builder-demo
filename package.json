@@ -1,0 +1,13 @@
+{
+  "name": "docxbuilder-demo",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "webpack src/main.js docs/js/index.js"
+  },
+  "dependencies": {
+    "docxtemplater": "^3.1.3",
+    "file-saver": "^1.3.3",
+    "jszip": "^2.6.1",
+    "jszip-utils": "0.0.2"
+  }
+}
